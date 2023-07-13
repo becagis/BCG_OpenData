@@ -9,7 +9,7 @@ create-envfile:
 		--dbpwd postgres \
 		--geodbpwd postgres
 
-create-envfile:
+create-envfile-prod:
 	python create-envfile.py \
 		--hostname opendata.becagis.vn \
 		--https \
