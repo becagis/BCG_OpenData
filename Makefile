@@ -3,7 +3,7 @@ create-envfile:
 		--hostname opendata.local \
 		--email becagis.vntts@gmail.com \
 		--env_type dev \
-		--geonodepwd opendata@Passwd123456 \
+		--geonodepwd admin@becagisvntts \
 		--geoserverpwd geoserver@Passwd123456 \
 		--pgpwd postgres \
 		--dbpwd postgres \
@@ -15,7 +15,7 @@ create-envfile-prod:
 		--https \
 		--email becagis.vntts@gmail.com \
 		--env_type prod \
-		--geonodepwd opendata@Passwd123456 \
+		--geonodepwd admin@becagisvntts \
 		--geoserverpwd geoserver@Passwd123456 \
 		--pgpwd postgres \
 		--dbpwd postgres \
