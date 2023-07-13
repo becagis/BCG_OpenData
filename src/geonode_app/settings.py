@@ -141,3 +141,6 @@ if LDAP_ENABLED and 'geonode_ldap' not in INSTALLED_APPS:
 
 # Add your specific LDAP configuration after this comment:
 # https://docs.geonode.org/en/master/advanced/contrib/#configuration
+
+OGC_SERVER_DEFAULT_USER = os.getenv("GEOSERVER_DEFAULT_ADMIN_USER", "admin")
+OGC_SERVER_DEFAULT_PASSWORD = os.getenv("GEOSERVER_DEFAULT_ADMIN_PASSWORD", "geoserver")
