@@ -167,6 +167,45 @@ MAPSTORE_BASELAYERS = [
     {
         "type": "tileprovider",
         "provider": "custom",
+        "title": "Google Terrain",
+        "name": "google",
+        "group": "background",
+        "visibility": False,
+        "url": "https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}",
+        "thumbURL": f"https://mt1.google.com/vt/lyrs=p&x=25&y=14&z=5",
+        "options": {
+            "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
+        }
+    },
+    {
+        "type": "tileprovider",
+        "provider": "custom",
+        "title": "Google Satellite",
+        "name": "google",
+        "group": "background",
+        "visibility": False,
+        "url": "https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+        "thumbURL": f"https://mt1.google.com/vt/lyrs=s&x=25&y=14&z=5",
+        "options": {
+            "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
+        }
+    },
+    {
+        "type": "tileprovider",
+        "provider": "custom",
+        "title": "Google Hybrid",
+        "name": "google",
+        "group": "background",
+        "visibility": False,
+        "url": "https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+        "thumbURL": f"https://mt1.google.com/vt/lyrs=y&x=25&y=14&z=5",
+        "options": {
+            "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
+        }
+    },
+    {
+        "type": "tileprovider",
+        "provider": "custom",
         "title": "Esri",
         "name": "esri",
         "group": "background",
