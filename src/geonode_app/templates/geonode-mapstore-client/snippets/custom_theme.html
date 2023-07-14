@@ -245,6 +245,7 @@
 
         .msgapi .gn-search-bar {
             border-radius: 8px;
+            border-width: 1px;
         }
 
         .msgapi .btn {
@@ -275,14 +276,50 @@
             border-radius: 8px;
         }
 
-        .msgapi .gn-search-bar {
-            border-width: 1px;
-            overflow: auto;
-        }
-
+   
         .msgapi .gn-resource-card {
             border-radius: 0.5rem;
             overflow: auto;
         }
+
+        .msgapi .gn-hero .jumbotron {
+            max-width: 1024px;
+            min-height: 568px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .msgapi .gn-hero .jumbotron .gn-hero-description h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #F8562A;
+            font-size: 72px;
+            font-weight: 600;
+        }
+
+        .msgapi .gn-hero .jumbotron .gn-hero-description {
+            position: relative;
+            font-weight: 500!important;
+        }
+
+        .gn-hero-description .hero-content-tag {
+            position: absolute;
+            right: 0;
+            top: 90px;
+            right: -58px;
+            font-size: 16px;
+        }
+
+        .gn-hero-description .hero-content-desc {
+            margin-top: 20px;
+        }
+
+        /* .gn-homepage .gn-main-header-placeholder {
+            display: none;
+        }
+
+        .gn-homepage .gn-main-header, .gn-homepage #gn-brand-navbar {
+            background: transparent;
+        } */
     </style>
 {% endblock %}
