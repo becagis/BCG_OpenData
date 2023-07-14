@@ -144,3 +144,52 @@ if LDAP_ENABLED and 'geonode_ldap' not in INSTALLED_APPS:
 
 OGC_SERVER_DEFAULT_USER = os.getenv("GEOSERVER_DEFAULT_ADMIN_USER", "admin")
 OGC_SERVER_DEFAULT_PASSWORD = os.getenv("GEOSERVER_DEFAULT_ADMIN_PASSWORD", "geoserver")
+
+INSTALLED_APPS = tuple(filter(lambda name: name != 'grappelli', INSTALLED_APPS))
+
+
+MAPSTORE_BASELAYERS[0]['visibility'] = False
+
+MAPSTORE_BASELAYERS = [
+    {
+        "type": "tileprovider",
+        "provider": "custom",
+        "title": "Google Maps",
+        "name": "google",
+        "group": "background",
+        "visibility": True,
+        "url": "https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
+        "thumbURL": f"https://mt1.google.com/vt/lyrs=m&x=25&y=14&z=5",
+        "options": {
+            "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
+        }
+    },
+    {
+        "type": "tileprovider",
+        "provider": "custom",
+        "title": "Esri",
+        "name": "esri",
+        "group": "background",
+        "visibility": False,
+        "url": "https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+        "thumbURL": f"https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/4/7/12",
+    }
+] + MAPSTORE_BASELAYERS
+
+THUMBNAIL_BACKGROUND = {
+    "class": "geonode.thumbs.background.GenericXYZBackground",
+    "options": {
+        'url': 'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}'
+    },
+}
+
+MAPSTORE_DEFAULT_LANGUAGES = MAPSTORE_DEFAULT_LANGUAGES + (
+    ("vi-vn", "Vietnamese"),
+)
+
+if os.getenv("LANGUAGES"):
+    LANGUAGES = ast.literal_eval(os.getenv("LANGUAGES"))
+    # Map given languages to mapstore supported languages.
+    LANGUAGES = tuple(
+        (k, v) for k, v in dict(MAPSTORE_DEFAULT_LANGUAGES).items() if any(m in k for m in dict(LANGUAGES).keys())
+    )
