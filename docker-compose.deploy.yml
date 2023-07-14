@@ -74,6 +74,7 @@ services:
       - statics:/mnt/volumes/statics
     restart: on-failure
     networks:
+      - default
       - proxy_overlay
 
   # Geoserver backend
@@ -139,7 +140,7 @@ services:
     # uncomment to enable remote connections to postgres
     #ports:
     #  - "5432:5432"
-    
+
   # Vanilla RabbitMQ service. This is needed by celery
   rabbitmq:
     image: rabbitmq:3.7-alpine
