@@ -1,3 +1,4 @@
 git+https://github.com/GeoNode/geonode.git@4.1.x#egg=GeoNode
 
 pydash==7.0.5
+django-dump-die==0.1.5

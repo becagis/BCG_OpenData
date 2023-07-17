@@ -21,8 +21,13 @@
 
         {% block extra_head %}
         {% endblock %}
+
+        {% autoescape off %}
+            {{ theme_options.header_html }}
+        {% endautoescape %}
+        
     </head>
-    <body class="msgapi ms2" data-ms2-container="ms2">
+    <body class="msgapi ms2" data-ms2-container="ms2">        
         <div class="gn-page-wrapper {% if request.user_agent.is_mobile %}gn-mobile{% else %}gn-desktop{% endif %}">
             <div class="gn-theme gn-homepage">
                 {% include './geonode-mapstore-client/_geonode_config.html' %}
@@ -94,7 +99,7 @@
                 {% block footer %}
                     {% include './geonode-mapstore-client/snippets/footer.html' %}
                 {% endblock %}
-    
+
                 {% block scripts %}
                     <script src="{% static "lib/js/jquery.min.js" %}"></script>
                     <script src="{% static "lib/js/bootstrap.min.js" %}"></script>
@@ -103,6 +108,10 @@
                         $('.dropdown-toggle').dropdown();
                     </script>
                 {% endblock %}
+
+                {% autoescape off %}
+                    {{ theme_options.footer_html }}
+                {% endautoescape %}
             </div>
         </div>
     </body>

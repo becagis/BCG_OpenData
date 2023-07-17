@@ -145,8 +145,13 @@ if LDAP_ENABLED and 'geonode_ldap' not in INSTALLED_APPS:
 OGC_SERVER_DEFAULT_USER = os.getenv("GEOSERVER_DEFAULT_ADMIN_USER", "admin")
 OGC_SERVER_DEFAULT_PASSWORD = os.getenv("GEOSERVER_DEFAULT_ADMIN_PASSWORD", "geoserver")
 
+INSTALLED_APPS += (
+    "geonode_app.theme_options",
+)
+
 INSTALLED_APPS = tuple(filter(lambda name: name != 'grappelli', INSTALLED_APPS))
 
+MIDDLEWARE += ("django_dump_die.middleware.DumpAndDieMiddleware",)
 
 MAPSTORE_BASELAYERS[0]['visibility'] = False
 
@@ -227,8 +232,13 @@ MAPSTORE_DEFAULT_LANGUAGES = MAPSTORE_DEFAULT_LANGUAGES + (
 )
 
 if os.getenv("LANGUAGES"):
-    LANGUAGES = ast.literal_eval(os.getenv("LANGUAGES"))
+    LANGUAGES = ast.literal_eval(os.getenv("LANGUAGES"))    
     # Map given languages to mapstore supported languages.
     LANGUAGES = tuple(
         (k, v) for k, v in dict(MAPSTORE_DEFAULT_LANGUAGES).items() if any(m in k for m in dict(LANGUAGES).keys())
     )
+
+
+CONTEXT_PROCESSORS += ["geonode_app.theme_options.context_processors.theme_options"]
+
+TEMPLATES[0]["OPTIONS"]["context_processors"] = CONTEXT_PROCESSORS

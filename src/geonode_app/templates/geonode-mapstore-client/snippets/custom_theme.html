@@ -4,6 +4,7 @@
         {{ custom_theme.extra_css }}
     {% endblock %}
 </style>
+
 {% block content %}
 
     {% comment %}
@@ -322,12 +323,14 @@
             margin-top: 20px;
         }
 
-        /* .gn-homepage .gn-main-header-placeholder {
-            display: none;
+        #gn-brand-navbar {
+            border-bottom: solid 1px #ededed;
         }
 
-        .gn-homepage .gn-main-header, .gn-homepage #gn-brand-navbar {
-            background: transparent;
-        } */
+
+
+        .msgapi .gn-legend-wrapper {
+            border-radius: 0.5rem;
+        }
     </style>
 {% endblock %}
