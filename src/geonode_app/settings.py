@@ -151,8 +151,6 @@ INSTALLED_APPS += (
 
 INSTALLED_APPS = tuple(filter(lambda name: name != 'grappelli', INSTALLED_APPS))
 
-MIDDLEWARE += ("django_dump_die.middleware.DumpAndDieMiddleware",)
-
 MAPSTORE_BASELAYERS[0]['visibility'] = False
 
 MAPSTORE_BASELAYERS = [
