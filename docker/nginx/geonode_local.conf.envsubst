@@ -66,30 +66,30 @@ location /jenkins {
     proxy_pass http://$upstream;
 }
 
-# GeoNode
-location /static/ {
-  alias /mnt/volumes/statics/static/;
+# # GeoNode
+# location /static/ {
+#   alias /mnt/volumes/statics/static/;
 
-  location ~* \.(?:html|js|jpg|jpeg|gif|png|css|tgz|gz|rar|bz2|doc|pdf|ppt|tar|wav|bmp|ttf|rtf|swf|ico|flv|txt|woff|woff2|svg|xml)$ {
-      gzip_static always;
-      expires 30d;
-      access_log off;
-      add_header Pragma "public";
-      add_header Cache-Control "max-age=31536000, public";
-  }
-}
+#   location ~* \.(?:html|js|jpg|jpeg|gif|png|css|tgz|gz|rar|bz2|doc|pdf|ppt|tar|wav|bmp|ttf|rtf|swf|ico|flv|txt|woff|woff2|svg|xml)$ {
+#       gzip_static always;
+#       expires 30d;
+#       access_log off;
+#       add_header Pragma "public";
+#       add_header Cache-Control "max-age=31536000, public";
+#   }
+# }
 
-location /uploaded/ {
-  alias /mnt/volumes/statics/uploaded/;
+# location /uploaded/ {
+#   alias /mnt/volumes/statics/uploaded/;
 
-  location ~* \.(?:html|js|jpg|jpeg|gif|png|css|tgz|gz|rar|bz2|doc|pdf|ppt|tar|wav|bmp|ttf|rtf|swf|ico|flv|txt|woff|woff2|svg|xml)$ {
-      gzip_static always;
-      expires 30d;
-      access_log off;
-      add_header Pragma "public";
-      add_header Cache-Control "max-age=31536000, public";
-  }
-}
+#   location ~* \.(?:html|js|jpg|jpeg|gif|png|css|tgz|gz|rar|bz2|doc|pdf|ppt|tar|wav|bmp|ttf|rtf|swf|ico|flv|txt|woff|woff2|svg|xml)$ {
+#       gzip_static always;
+#       expires 30d;
+#       access_log off;
+#       add_header Pragma "public";
+#       add_header Cache-Control "max-age=31536000, public";
+#   }
+# }
 
 location / {
   # Using a variable is a trick to let Nginx start even if upstream host is not up yet
