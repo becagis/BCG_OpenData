@@ -142,7 +142,7 @@
 
 /* Action Navbar */
 .msgapi .gn-action-navbar-title {
-    border-radius: $border-radius;
+    border-radius: $border-radius!important;
 }
 
 /* Measure Dialog */
@@ -152,10 +152,6 @@
     .col-xs-6 {
         width: 100%;
     }
-}
-
-.msgapi .btn-group .btn {
-
 }
 
 .btn-toolbar .btn {
