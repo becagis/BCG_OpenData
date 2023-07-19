@@ -1,0 +1,15 @@
+.msgapi .gn-resource-card {
+    border-radius: $border-radius;
+
+    .card-img-top {
+        border-radius: $border-radius $border-radius 0 0;
+    }
+    .gn-card-options {
+        border-radius: 4px;
+
+        .btn {
+            border-radius: 4px;
+            border: none;
+        }
+    }
+}

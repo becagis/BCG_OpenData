@@ -1,0 +1,129 @@
+/* Footer */
+.msgapi .mapstore-map-footer {
+    padding: 2px 4px;
+    height: 34px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #ffffffd1;
+    right: 0;
+    display: flex;
+    z-index: 1000!important;
+
+    .ol-attribution.ol-uncollapsible {
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+
+    #footer-attribution-container {
+        flex: 1;
+    }
+}
+
+/* Page Viewer */
+.msgapi .gn-overlay-wrapper {
+    border-top: 1px solid var(--gn-main-border-color,#ddd);
+}
+
+.msgapi .gn-details-panel-header {
+    padding: 8px 16px;
+    display: flex;
+    gap: 4px;
+    background: #ffffffa8;
+
+    .gn-details-panel-tools {
+        display: flex;
+        gap: 4px;
+    }
+}
+
+.msgapi .square-button {
+    width: 33px;
+    height: 33px;
+
+    .glyphicon {
+        font-size: 14px;
+    }
+}
+
+.msgapi .btn-group-vertical > .square-button {
+    width: 33px;
+}
+
+/* Toolbar */
+.msgapi #navigationBar .mapToolbar {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    margin-bottom: 43px;
+
+    button:first-child {
+        border-radius: 8px 8px 0 0;
+    }
+
+    button:last-child {
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+/* SearchBar */
+.msgapi #mapstore-navbar-container {
+    box-shadow: none;
+    background: #ffffffe6;
+    border-radius: $border-radius;
+    margin-top: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+
+    .form-control, .btn-default, .input-group {
+        background-color: transparent!important;
+    }
+}
+
+/* Legend */
+.msgapi .gn-legend-wrapper  {
+    border-radius: $border-radius;
+}
+
+/* Background Map */
+.msgapi .background-plugin-position {
+    margin-left: 0.5rem;
+    margin-bottom: 46px;
+
+    .background-preview-button-container, 
+    .background-preview-button-frame,
+    .background-preview-icon-container-horizontal,
+    .background-preview-icon-frame {
+        border-radius: $border-radius;
+    }
+}
+
+/* Detail Panels */
+.msgapi .gn-details-panel-preview-wrapper {
+    border-radius: $border-radius;
+    overflow: hidden;
+}
+
+.msgapi .gn-details-info-row .gn-details-info-label {
+    font-weight: 500!important;
+}
+
+.msgapi .gn-details-info-table .table tbody>tr>td {
+    font-weight: 400;
+}
+
+/* Scalebox */
+.msgapi #mapstore-scalebox select, .msgapi select option {
+    border: none!important;
+}
+
+/* Identity */
+
+.msgapi #identify-container .layer-select-row .layer-col {
+    gap: 8px;
+
+    .Select-control {
+        border-radius: $border-radius;
+    }
+}
+
+.msgapi .alert h4 {
+    margin-bottom: 0;
+}

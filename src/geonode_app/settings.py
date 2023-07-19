@@ -151,7 +151,7 @@ INSTALLED_APPS += (
 
 INSTALLED_APPS = tuple(filter(lambda name: name != 'grappelli', INSTALLED_APPS))
 
-MAPSTORE_BASELAYERS[0]['visibility'] = False
+MAPSTORE_BASELAYERS = list(filter(lambda i: i['type'] == 'osm', MAPSTORE_BASELAYERS))
 
 MAPSTORE_BASELAYERS = [
     {

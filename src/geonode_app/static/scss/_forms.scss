@@ -1,0 +1,52 @@
+/* Search Bar */
+.msgapi .gn-search-bar {
+    border-radius: $border-radius;
+    border-width: 1px;
+    
+    .input-group {
+        padding: 0 4px;
+    }
+
+    .input-group-append {
+        padding: 0 0.5rem;
+    }
+
+    .btn {
+        border: none;
+        border-radius: $border-radius;
+    }
+
+    .gn-suggestions {
+        border-radius: $border-radius;
+        border: 1px solid var(--gn-main-border-color,#ddd);
+
+        .gn-suggestions-header {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            z-index: 100;
+
+            .btn {
+                border: none;
+                border-radius: 50%;
+                box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+
+                
+            }
+        }
+    }
+}
+
+.msgapi .form-control {
+    border-radius: $border-radius;
+    padding: 0.5rem 0.75rem;
+}
+
+.msgapi .list-group-item {
+    background: inherit;
+    border: none;
+
+    &:hover {
+        border-radius: $border-radius;
+    };
+}

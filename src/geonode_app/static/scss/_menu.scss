@@ -1,0 +1,35 @@
+.msgapi .gn-menu.gn-primary {
+    background-color: var(--gn-secondary);
+    padding: 0.5rem 0;
+}
+
+.msgapi .dropdown-menu {
+    border-radius: $border-radius;
+
+    > li {
+        button {
+            padding: 4px 16px!important;
+        }
+
+        a[role="menuitem"] {
+            padding: 4px 16px;
+        }
+    }
+
+    button {
+        border-radius: 0;
+    }
+
+}
+
+.gn-menu-container .gn-menu-list {
+    .btn-primary {
+        background-color: var(--gn-secondary);
+        border-color: var(--gn-secondary);
+
+        &:hover {
+            background-color: var(--gn-primary);
+            border-color: var(--gn-primary);
+        }
+    }
+}
