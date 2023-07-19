@@ -3,6 +3,10 @@ a {
   outline: none !important;
 }
 
+#wrap {
+  margin-top: 30px;
+}
+
 .msgapi .gn-resource-card {
   border-radius: 0.5rem;
 }
@@ -85,6 +89,16 @@ a {
   border: none;
 }
 .msgapi .list-group-item:hover {
+  border-radius: 0.5rem;
+}
+
+/* Select */
+.msgapi .gn-legacy select {
+  border-radius: 0.5rem;
+}
+
+/* Dropzone */
+#drop-zone {
   border-radius: 0.5rem;
 }
 

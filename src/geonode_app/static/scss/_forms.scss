@@ -50,3 +50,13 @@
         border-radius: $border-radius;
     };
 }
+
+/* Select */
+.msgapi .gn-legacy select {
+    border-radius: $border-radius;
+}
+
+/* Dropzone */
+#drop-zone {
+    border-radius: $border-radius;
+}
