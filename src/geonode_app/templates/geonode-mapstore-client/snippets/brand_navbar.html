@@ -1,22 +1,3 @@
 {% extends "geonode-mapstore-client/snippets/brand_navbar.html" %}
 {% load static %}
 {% block logo_src %}{% static 'img/logo.png' %}{% endblock %}
-
-{% block center_menu %}
-    <style>
-        #gn-title-bar {
-            display: none;
-        }
-        @media (max-width: 748px) {
-            #gn-title-bar {
-                display: block!important;
-                color: #F8562A;
-                font-weight: 600;
-                font-size: 18px;
-            }
-        }
-    </style>
-
-    <div id="gn-title-bar">{{ SITE_NAME }}</div>
-    {% include './search_bar.html' with search_bar_id='gn-search-bar' %}
-{% endblock %}
