@@ -55,12 +55,24 @@
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
     margin-bottom: 43px;
 
-    button:first-child {
-        border-radius: 8px 8px 0 0;
+    &.btn-group-vertical {
+        button:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+    
+        button:last-child {
+            border-radius: 0 0 8px 8px;
+        }
     }
 
-    button:last-child {
-        border-radius: 0 0 8px 8px;
+    &.btn-group-horizontal {
+        button:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+    
+        button:last-child {
+            border-radius: 0 8px 8px 0;
+        }
     }
 }
 
@@ -126,4 +138,36 @@
 
 .msgapi .alert h4 {
     margin-bottom: 0;
+}
+
+/* Action Navbar */
+.msgapi .gn-action-navbar-title {
+    border-radius: $border-radius;
+}
+
+/* Measure Dialog */
+#measure-dialog {
+    max-width: 250px;
+
+    .col-xs-6 {
+        width: 100%;
+    }
+}
+
+.msgapi .btn-group .btn {
+
+}
+
+.btn-toolbar .btn {
+    border-radius: 0;
+
+    &:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    &:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
 }

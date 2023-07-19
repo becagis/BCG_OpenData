@@ -1,7 +1,9 @@
-.msgapi .modal.in .modal-dialog {
+.msgapi .modal-dialog {
     border-radius: $border-radius;
-
-    .modal-header {
-        
-    }
 }
+
+.msgapi .modal-header {
+    border-radius: $border-radius $border-radius 0 0;
+    padding: 9.6px 16px;
+}
+
