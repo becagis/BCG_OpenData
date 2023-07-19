@@ -1,3 +1,20 @@
+/* Banner */
+@media (max-width: 748px) {
+    .msgapi .gn-hero .jumbotron {
+        min-height: 400px;
+    }
+
+    .msgapi .gn-hero .jumbotron .gn-hero-description h1 {
+        font-size: 43px;
+    }
+
+    .gn-hero-description .hero-content-tag {
+        top: 108px;
+        right: 18px;
+        font-size: 13px;
+    }
+}
+
 .msgapi #mapstore-navbar-container {
     box-shadow: none;
     background: #ffffffe6;
