@@ -66,7 +66,7 @@ location /jenkins {
     proxy_pass http://$upstream;
 }
 
-# # GeoNode
+# GeoNode
 # location /static/ {
 #   alias /mnt/volumes/statics/static/;
 
@@ -133,11 +133,11 @@ location / {
   # uwsgi_ignore_client_abort on;
   # uwsgi_request_buffering off;
 
-  location ~* \.(?:js|jpg|jpeg|gif|png|tgz|gz|rar|bz2|doc|pdf|ppt|tar|wav|bmp|ttf|rtf|swf|ico|flv|woff|woff2|svg|xml)$ {
-      gzip_static always;
-      expires 30d;
-      access_log off;
-      add_header Pragma "public";
-      add_header Cache-Control "max-age=31536000, public";
-  }
+#   location ~* \.(?:js|jpg|jpeg|gif|png|tgz|gz|rar|bz2|doc|pdf|ppt|tar|wav|bmp|ttf|rtf|swf|ico|flv|woff|woff2|svg|xml)$ {
+#       gzip_static always;
+#       expires 30d;
+#       access_log off;
+#       add_header Pragma "public";
+#       add_header Cache-Control "max-age=31536000, public";
+#   }
 }

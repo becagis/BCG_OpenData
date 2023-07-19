@@ -1,0 +1,114 @@
+.msgapi #mapstore-navbar-container {
+    box-shadow: none;
+    background: #ffffffe6;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+.msgapi #mapstore-navbar-container .msgapi .form-control, .msgapi .btn-default {
+    background: transparent;
+}
+
+.msgapi #mapstore-navbar .navbar-dx .MapSearchBar .input-group {
+    background: transparent;
+}
+
+.msgapi .form-control {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.msgapi .background-preview-button-container,
+.msgapi .background-preview-button-frame {
+    border-radius: 0.5rem;
+}
+
+.msgapi .background-preview-icon-container-horizontal,
+.msgapi .background-preview-icon-frame {
+    border-radius: 0.5rem;
+}
+
+.msgapi .background-plugin-position {
+    margin-left: 0.5rem;
+    margin-bottom: 46px;
+}
+
+.msgapi #navigationBar .mapToolbar {
+    margin-bottom: 46px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    border-radius: 0.5rem;
+    overflow: auto;
+    margin-bottom: 46px;
+}
+
+.msgapi .mapstore-map-footer {
+    padding: 2px 4px;
+    height: 34px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #ffffffd1;
+    right: 0;
+    display: flex;
+    z-index: 1000!important;
+}
+
+.msgapi .mapstore-map-footer .ol-attribution.ol-uncollapsible {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+#footer-attribution-container {
+    flex: 1;
+}
+
+.msgapi .square-button .glyphicon {
+    font-size: 16px;
+}
+
+#zoomout-btn {
+    border-bottom: 1px solid #ed8f00;
+}
+
+
+/* Style Rule Editor */
+.msgapi .ms-style-rules-editor .ms-style-rules-editor-body {
+    margin-top: 8px;
+}
+
+.msgapi .ms-style-rules-editor .ms-style-rule {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    padding-top: 12px;
+}
+
+.msgapi .ms-style-rules-editor .ms-symbolizer {
+    border: none;
+}
+
+.msgapi .ms-style-editor-toolbar .btn-group {
+    border-radius: 4px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+/* * {
+    scrollbar-width: auto;
+    scrollbar-color: #d1d1d1 #ffffff;
+} */
+
+/* Chrome, Edge, and Safari */
+/* *::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #dadada;
+    border-radius: 10px;
+} */

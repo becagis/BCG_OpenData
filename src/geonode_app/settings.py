@@ -165,7 +165,8 @@ MAPSTORE_BASELAYERS = [
         "thumbURL": f"https://mt1.google.com/vt/lyrs=m&x=25&y=14&z=5",
         "options": {
             "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
-        }
+        },
+        "attribution": '© <a href="https://www.google.com/maps">Google Maps</a>.'
     },
     {
         "type": "tileprovider",
@@ -178,7 +179,8 @@ MAPSTORE_BASELAYERS = [
         "thumbURL": f"https://mt1.google.com/vt/lyrs=p&x=25&y=14&z=5",
         "options": {
             "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
-        }
+        },
+        "attribution": '© <a href="https://www.google.com/maps">Google Maps</a>.'
     },
     {
         "type": "tileprovider",
@@ -191,7 +193,8 @@ MAPSTORE_BASELAYERS = [
         "thumbURL": f"https://mt1.google.com/vt/lyrs=s&x=25&y=14&z=5",
         "options": {
             "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
-        }
+        },
+        "attribution": '© <a href="https://www.google.com/maps">Google Maps</a>.'
     },
     {
         "type": "tileprovider",
@@ -204,7 +207,8 @@ MAPSTORE_BASELAYERS = [
         "thumbURL": f"https://mt1.google.com/vt/lyrs=y&x=25&y=14&z=5",
         "options": {
             "subdomains": [ "mt0", "mt1", "mt2", "mt3"]
-        }
+        },
+        "attribution": '© <a href="https://www.google.com/maps">Google Maps</a>.'
     },
     {
         "type": "tileprovider",

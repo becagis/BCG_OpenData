@@ -1,4 +1,8 @@
 
+{% load static %}
+
+<link href="{% static 'css/site_base.css' %}" rel="stylesheet" />
+
 <style>
     {% block extra_css %}
         {{ custom_theme.extra_css }}
